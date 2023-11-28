@@ -13,11 +13,12 @@ function App() {
     <tr><td>{person.name}</td><td>{person.age}</td></tr>
     );
 
-  return 
+  return (
   <table>
     <tr><td>이름</td><td>나이</td></tr>
     {trlist}
-  </table>;;
+  </table>
+  );
 }
 
 export default App;
