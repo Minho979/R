@@ -5,8 +5,8 @@ import './App.css';
 function App() {
   return (
     <div>
-      <h1>hello</h1>
-      <h1> world</h1>
+      <p className='blue'>hello world</p>
+      <p className='green'>안녕하세요</p>
     </div>
   );
 }
