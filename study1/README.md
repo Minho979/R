@@ -1,46 +1,15 @@
-# Getting Started with Create React App
+# React DOM
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+함수형 리액트 컴포넌트는 Virtual DOM 객체를 생성해서 리턴하는 자바스크립트 함수이다.
 
-## Available Scripts
+JSX 문법으로 구현한 태그는 Virtual DOM 자바스크립트 객체이다. HTML 태그처럼 보이지만 HTML 태그가 아니다. 따라서 JSX 작성 규칙은 HTML 문서 작성 규칙과 다르다.
 
-In the project directory, you can run:
+여러 줄로 구현된 JSX 태그 부분은 ( ) 괄호로 묶어줘야 한다.
 
-### `npm start`
+JSX 태그 부분에서 자바스크립트 표현식은 { } 괄호로 묶어야 한다.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+JSX 태그 부분에서는 class 대신 className을 사용해야 한다.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+JSX 태그 부분에서 style 값은 문자열이 아니고, 자바스크립트 객체이어야 한다.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+JSX에서 CSS 서식 이름은 카멜 케이스 방식을 사용해야 한다.
