@@ -9,17 +9,16 @@ function App() {
     {name: 'John', age: 20}
   ];
 
-  let td1 = React.createElement("td", null, "이름");
-  let td2 = React.createElement("td", null, "나이");
-  let tr = React.createElement("tr", null, td1, td2);
-  let trlist = [tr];
+  let trlist = [];
   for (let person of persons) {
-    td1 = React.createElement("td", null, person.name);
-    td2 = React.createElement("td", null, person.age);
-    tr = React.createElement("tr", null, td1, td2);
+    let tr = <tr><td>{person.name}</td><td>{person.age}</td></tr>;
     trlist.push(tr);
   }
-  let table = React.createElement("table", null, trlist);
+  let table = 
+  <table>
+    <tr><td>이름</td><td>나이</td></tr>
+    {trlist}
+  </table>;
   return table;
 }
 
